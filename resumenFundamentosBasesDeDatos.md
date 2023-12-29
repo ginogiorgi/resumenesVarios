@@ -43,3 +43,17 @@ Continuamos con el paso de normalizar, ¿pero ¿qué es normalizar? Para mejorar
   - 3FN: Cumple con la 1FN y 2FN y los campos que NO son clave, NO deben tener dependencias. Se debe seguir analizando la estructura de las tablas, para evitar que no haya registros con campos no dependientes.
 
   - 4FN: Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única.
+
+# RDB (relational database)
+
+RDBMS (Relational DataBase Magement System) Sistema Manejador de Bases de datos relacionales.
+
+La diferencia entre ambos es que las BBDD son un conjunto de datos pertenecientes ( o al menos en teoría) a un mismo tipo de contexto, que guarda los datos de forma persistente para un posterior uso, y el Sistema de gestión de BBDD o sistema manejador, es el que nos permite acceder a ella, es un software, herramienta que sirve de conexión entre las BBDD y el usuario (nos presenta una interfaz para poder gestionarla, manejarla).
+
+### RDBMS:
+
+- MySQL
+- PostgreSQL
+- Etc
+
+Todas toman un lenguaje base, pero cada uno lo apropia, imponiéndole diferentes reglas y características.
