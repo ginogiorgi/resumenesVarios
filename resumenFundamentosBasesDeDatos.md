@@ -57,3 +57,36 @@ La diferencia entre ambos es que las BBDD son un conjunto de datos perteneciente
 - Etc
 
 Todas toman un lenguaje base, pero cada uno lo apropia, imponiéndole diferentes reglas y características.
+
+# SQL
+
+SQL significa Structured Query Language y tiene una estructura clara y fija. Su objetivo es hacer un solo lenguaje para consultar cualquier manejador de bases de datos volviéndose un gran estándar.
+
+SQL tiene dos grandes sublenguajes:
+
+## DDL
+
+O Data Definition Language que nos ayuda a crear la estructura de una base de datos. Existen 3 grandes comandos:
+
+- Create: Nos ayuda a crear bases de datos, tablas, vistas, índices, etc.
+
+- Alter: Ayuda a alterar o modificar entidades.
+
+- Drop: Nos ayuda a borrar. Hay que tener cuidado al utilizarlo.
+
+3 objetos que manipularemos con el lenguaje DDL:
+
+- Database o bases de datos
+- Table o tablas. Son la traducción a SQL de las entidades
+- View o vistas: Se ofrece la proyección de los datos de la base de datos de forma entendible.
+
+Nota: las herramientas del DDL se utilizan mayormente en la fase de construcción y mantenimiento de las bases de datos, la manipulación u operación se hace con DML.
+
+## DML
+
+Trata del contenido de la base de datos. Son las siglas de Data Manipulation Language y sus comandos son:
+
+- Insert: Inserta o agrega nuevos registros a la tabla
+- Update: Actualiza o modifica los datos que ya existen
+- Delete: Esta sentencia es riesgosa porque puede borrar el contenido de una tabla
+- Select: Trae información de la base de datos
