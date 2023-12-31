@@ -90,3 +90,9 @@ Trata del contenido de la base de datos. Son las siglas de Data Manipulation Lan
 - Update: Actualiza o modifica los datos que ya existen
 - Delete: Esta sentencia es riesgosa porque puede borrar el contenido de una tabla
 - Select: Trae información de la base de datos
+
+## Creando las tablas en My SQL
+
+- Una buena práctica es comenzar creando las entidades que no tienen una llave foránea.
+- Generalmente en los nombres de bases de datos se evita usar eñes o acentos para evitar problemas en los manejadores de las bases de datos.
+- Cuando creamos las tablas dependientes, el comando **CASCADE** sirve para que cada que se haga un update en la tabla principal, se refleje también en la tabla en la que estamos creando la relación.
