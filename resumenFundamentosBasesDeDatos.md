@@ -96,3 +96,5 @@ Trata del contenido de la base de datos. Son las siglas de Data Manipulation Lan
 - Una buena práctica es comenzar creando las entidades que no tienen una llave foránea.
 - Generalmente en los nombres de bases de datos se evita usar eñes o acentos para evitar problemas en los manejadores de las bases de datos.
 - Cuando creamos las tablas dependientes, el comando **CASCADE** sirve para que cada que se haga un update en la tabla principal, se refleje también en la tabla en la que estamos creando la relación.
+- Las tablas transitivas sirven como puente para unir dos tablas. No tienen contenido semántico.
+- **Reverse Engineer** nos reproduce el esquema del cual nos basamos para crear nuestras tablas. Es útil cuando llegas a un nuevo trabajo y quieres entender cuál fue la mentalidad que tuvieron al momento de crear las bases de datos.
