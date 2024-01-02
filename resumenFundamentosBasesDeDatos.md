@@ -99,7 +99,53 @@ Trata del contenido de la base de datos. Son las siglas de Data Manipulation Lan
 - Las tablas transitivas sirven como puente para unir dos tablas. No tienen contenido semántico.
 - **Reverse Engineer** nos reproduce el esquema del cual nos basamos para crear nuestras tablas. Es útil cuando llegas a un nuevo trabajo y quieres entender cuál fue la mentalidad que tuvieron al momento de crear las bases de datos.
 
-# Consultas a una base de datos
+# Consultas a una base de datos (queries)
+
+Los queries son la forma en la que estructuramos las preguntas que se harán a la base de datos. Transforma preguntas en sintaxis.  
+El query tiene básicamente 2 partes: SELECT y FROM y puede aparecer una tercera como WHERE.
+
+## Select
+
+SELECT se encarga de proyectar o mostrar datos.
+
+- El nombre de las columnas o campos que estamos consultando puede ser cambiado utilizando AS después del nombre del campo y poniendo el nuevo que queremos tener
+- con COUNT(\*) podemso contar la cantidad de registros
+
+## From
+
+FROM indica de dónde se deben traer los datos y puede ayudar a hacer sentencias y filtros complejos cuando se quieren unir tablas. La sentencia compañera que nos ayuda con este proceso es JOIN.
+
+![diagramas de Venn de Join](./imagenes/teoria_conjuntos_sentencias.jpg)
+
+- Con ON seleccionamos que columna va a actuar de pibote.  
+  Ej: LEFT JOIN posts ON usuarios.id = posts.usuario_id;
+
+## Where
+
+WHERE es la sentencia que nos ayuda a filtrar tuplas o registros dependiendo de las características que elegimos.
+
+- La propiedad LIKE nos ayuda a traer registros de los cuales conocemos sólo una parte de la información.
+- La propiedad BETWEEN nos sirve para arrojar registros que estén en el medio de dos. Por ejemplo los registros con id entre 20 y 30
+- Si nesesitamos buscar datos nulos o no nulos, se usa IS NULL y IS NOT NULL respectivamente
+
+## Group By
+
+GROUP BY tiene que ver con agrupación. Indica a la base de datos qué criterios debe tener en cuenta para agrupar.  
+Gruop by te permite agrupar estilo pivot tables, e informes.
+
+# Order By
+
+La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo de los criterios que quieras usar.
+
+- ASC sirve para ordenar de forma ascendente.
+- DESC sirve para ordenar de forma descendente.
+- LIMIT se usa para limitar la cantidad de resultados que arroja el query.
+
+# Having
+
+HAVING tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
+
+<!-- Sumado a la clase, propongo lo siguiente LIMIT: La cantidad de registros que quiero -->
 
 # Datos adicionales
 
