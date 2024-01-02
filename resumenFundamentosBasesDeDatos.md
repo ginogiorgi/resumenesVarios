@@ -145,13 +145,31 @@ La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo
 
 HAVING tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
 
-<!-- Sumado a la clase, propongo lo siguiente LIMIT: La cantidad de registros que quiero -->
-
 # Nested Queries
 
 Los Nested queries significan que dentro de un query podemos hacer otro query. Esto sirve para hacer join de tablas, estando una en memoria. También teniendo un query como condicional del otro.
 
 Este proceso puede ser tan profundo como quieras, teniendo infinitos queries anidados. Se le conoce como un producto cartesiano ya que se multiplican todos los registros de una tabla con todos los del nuevo query. Esto provoca que el query sea difícil de procesar por lo pesado que puede resultar, y se considera como no escalable.
+
+# Convertir una pregunta a un query SQL
+
+Todos los comandos anteriores funcionan juntos de la forma:
+
+- **SELECT:** Lo que quieres mostrar
+- **FROM:** De dónde voy a tomar los datos (tablas unicas o con joins)
+- **WHERE:** Los filtros de los datos que quieres mostrar
+- **GROUP BY:** Los rubros por los que me interesa agrupar la información
+- **ORDER BY:** El orden en que quiero presentar mi información
+- **HAVING:** Los filtros que quiero que mis datos agrupados tengan
+- **LIMIT:** La cantidad de registros que quiero
+
+Otros comandos utiles:
+
+- GROUP_CONCAT: toma el resultado del query y lo pone como campo separado por comas
+- DISTINCT: Evita duplicidad en los valores
+
+Tip: Puedes usar una abreviación para evitar escribir lo mismo cada vez.  
+Ejemplo: FROM categorias AS c
 
 # Datos adicionales
 
