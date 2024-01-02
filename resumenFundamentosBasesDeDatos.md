@@ -133,7 +133,7 @@ WHERE es la sentencia que nos ayuda a filtrar tuplas o registros dependiendo de 
 GROUP BY tiene que ver con agrupación. Indica a la base de datos qué criterios debe tener en cuenta para agrupar.  
 Gruop by te permite agrupar estilo pivot tables, e informes.
 
-# Order By
+## Order By
 
 La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo de los criterios que quieras usar.
 
@@ -141,11 +141,17 @@ La sentencia ORDER BY tiene que ver con el ordenamiento de los datos dependiendo
 - DESC sirve para ordenar de forma descendente.
 - LIMIT se usa para limitar la cantidad de resultados que arroja el query.
 
-# Having
+## Having
 
 HAVING tiene una similitud muy grande con WHERE, sin embargo el uso de ellos depende del orden. Cuando se quiere seleccionar tuplas agrupadas únicamente se puede hacer con HAVING.
 
 <!-- Sumado a la clase, propongo lo siguiente LIMIT: La cantidad de registros que quiero -->
+
+# Nested Queries
+
+Los Nested queries significan que dentro de un query podemos hacer otro query. Esto sirve para hacer join de tablas, estando una en memoria. También teniendo un query como condicional del otro.
+
+Este proceso puede ser tan profundo como quieras, teniendo infinitos queries anidados. Se le conoce como un producto cartesiano ya que se multiplican todos los registros de una tabla con todos los del nuevo query. Esto provoca que el query sea difícil de procesar por lo pesado que puede resultar, y se considera como no escalable.
 
 # Datos adicionales
 
