@@ -98,3 +98,12 @@ Trata del contenido de la base de datos. Son las siglas de Data Manipulation Lan
 - Cuando creamos las tablas dependientes, el comando **CASCADE** sirve para que cada que se haga un update en la tabla principal, se refleje también en la tabla en la que estamos creando la relación.
 - Las tablas transitivas sirven como puente para unir dos tablas. No tienen contenido semántico.
 - **Reverse Engineer** nos reproduce el esquema del cual nos basamos para crear nuestras tablas. Es útil cuando llegas a un nuevo trabajo y quieres entender cuál fue la mentalidad que tuvieron al momento de crear las bases de datos.
+
+# Consultas a una base de datos
+
+# Datos adicionales
+
+- Mapa completo de los temas:  
+  https://www.goconqr.com/mindmap/22606096/fundamentos-de-bases-de-datos
+- Repositiorio con notas mas completas y menos resumidas:  
+  https://github.com/rb-one/Notas-fundamentos-bases-de-datos
