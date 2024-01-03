@@ -171,6 +171,18 @@ Otros comandos utiles:
 Tip: Puedes usar una abreviación para evitar escribir lo mismo cada vez.  
 Ejemplo: FROM categorias AS c
 
+# Bases de Datos NO relacionales
+
+Respecto a las bases de datos no relacionales, no existe un solo tipo aunque se engloben en una sola categoría.Existen varios tipos:
+
+- Clave - valor: Son ideales para almacenar y extraer datos con una clave única. Manejan los diccionarios de manera excepcional. Ejemplos: **DynamoDB, Cassandra**
+- Basadas en documentos: Son una implementación de clave valor que varía en la forma semiestructurada en que se trata la información. Ideal para almacenar datos JSON y XML. Ejemplos: **MongoDB, Firestore**
+- Basadas en grafos: Basadas en teoría de grafos, sirven para entidades que se encuentran interconectadas por múltiples relaciones. Ideales para almacenar relaciones complejas. Ejemplos: **neo4j, TITAN**
+- En memoria: Pueden ser de estructura variada, pero su ventaja radica en la velocidad, ya que al vivir en memoria la extracción de datos es casi inmediata. Ejemplos: **Memcached, Redis**
+- Optimizadas para búsquedas: Pueden ser de diversas estructuras, su ventaja radica en que se pueden hacer queries y búsquedas complejas de manera sencilla. Ejemplos: **BigQuery, Elasticsearch**
+
+Cada base de datos de este tipo soluciona un problema en particular, pero es mala para todo lo demas dada la gran cantidad de datos.
+
 # Datos adicionales
 
 - Mapa completo de los temas:  
